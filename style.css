@@ -1,0 +1,111 @@
+
+body {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.phone-screen {
+  display: inline-flex;
+}
+
+.ios-calculator {
+  border: solid;
+  background-color: rgb(28, 28, 28);
+  border-color: rgb(255, 149, 0);
+  border-width: 1px;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.input-screen {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: black;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+.input-screen span {
+  justify-self: flex-end;
+  font-family: Roboto, Arial;
+  font-size: 47px;
+}
+
+.calculator-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 11px;
+  row-gap: 11px;
+  margin-bottom: 11px;
+}
+
+.buttom-input {
+  display: grid;
+  grid-template-columns: 151px 1fr 1fr;
+  column-gap: 11px;
+  row-gap: 11px;
+}
+
+.clear, .operator, .numbers, .point, .equals, .negative, .percent {
+  font-family: Roboto, Arial;
+  font-size: 30px;
+  font-weight: bold;
+  height: 70px;
+  width: 70px;
+  border-radius: 46px;
+  text-align: center;
+  border: none;
+}
+
+.numberZero {
+  font-family: Roboto, Arial;
+  font-size: 30px;
+  font-weight: bold;
+  height: 70px;
+  width: 151px;
+  border-radius: 46px;
+  text-align: left;
+  padding-left: 27px;
+  border: none
+}
+
+.operator, .equals {
+  background-color: rgb(255, 149, 0);
+  color: white;
+}
+
+.clear, .negative, .percent {
+  background-color: #A5A5A5;
+  color: black;
+}
+
+.numbers, .numberZero, .point {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.item:active,
+.item:focus {
+  filter: brightness(120%)
+}
